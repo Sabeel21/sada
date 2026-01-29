@@ -270,11 +270,66 @@ header.scrolled {
 }
 
 
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
 .header-logo img {
-  height: 55px;
+  height: 66px;
   /* Matches larger logo in ref */
   width: auto;
+  transition: all 0.3s;
 }
+
+.header-logo-text {
+  height: 45px !important;
+  opacity: 0;
+  transform: translateY(8px);
+  width: 0 !important;
+  /* Hide width to prevent spacing */
+  transition: all 0.4s ease;
+  pointer-events: none;
+  margin: 0;
+}
+
+header.scrolled .header-logo-text {
+  opacity: 1;
+  transform: translateY(0);
+  width: auto !important;
+  margin-top: -3px;
+  margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+  .header-logo img {
+    height: 40px;
+  }
+
+  /* Typography specific for mobile */
+  .header-logo-text {
+    height: 28px !important;
+  }
+
+  header.scrolled .header-logo-text {
+    margin-top: 0;
+    margin-left: 3px;
+  }
+
+  .mobile-menu-btn {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-dark);
+  }
+
+  header.scrolled .mobile-menu-btn {
+    color: #fff;
+  }
+}
+
 
 /* Desktop Menu */
 .desktop-menu {
@@ -916,9 +971,9 @@ header.scrolled .desktop-menu a {
 
   .wing-card:last-child {
     grid-column: span 2;
-    width: 100%;
-    max-width: 260px;
-    justify-self: center;
+    width: calc((100% - 0.8rem) / 2);
+    margin: 0 auto;
+    max-width: none;
   }
 
   .wing-title {
