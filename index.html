@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SADA - Students' Union | Daruswalah Islamic Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="home">
+
+    <!-- Header Wrapper to contain Top Bar and Main Header -->
+    <div class="header-wrapper">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div class="top-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>karamoola, mukkam, 673602</span>
+                </div>
+                <div class="top-social">
+                    <a href="https://www.instagram.com/sada__official__?igsh=MXI1cHU1NWRoMzExOA=="
+                        class="top-social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@voiceofaslamissadadaruswal9079" class="top-social-link"
+                        target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.whatsapp.com/channel/0029VbB7MXc0rGiP2nThyJ1U" class="top-social-link"
+                        target="_blank"><i class="fas fa-comments"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header id="main-header">
+            <a href="#home" class="header-logo">
+                <img src="assets/images/logo.png" alt="SADA Logo">
+            </a>
+
+            <nav class="desktop-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#committee">Committee</a>
+                <a href="#wings">Wings</a>
+                <a href="#events">Events</a> <!-- Changed from Gallery to Events to match ref -->
+                <a href="#contact">Contact</a>
+                <a href="donation.html" class="donate-btn">
+                    <i class="fas fa-heart"></i> Donate
+                </a>
+            </nav>
+
+            <div class="mobile-menu-btn" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div style="position: absolute; top: 2rem; right: 2rem; font-size: 2rem; cursor: pointer; color: #fff;"
+            id="close-mobile-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#committee" class="mobile-link">Committee</a>
+        <a href="#wings" class="mobile-link">Wings</a>
+        <a href="#events" class="mobile-link">Events</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="donation.html" class="mobile-link" style="color: var(--accent-color);">Donate</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero-section">
+        <div class="hero-decorative-elements">
+            <!-- Left side wavy pattern -->
+            <div class="hero-pattern hero-pattern-left">
+                <svg width="150" height="300" viewBox="0 0 150 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 10C50 50 10 100 50 150C90 200 50 250 90 290" stroke="var(--accent-color)"
+                        stroke-opacity="0.2" stroke-width="2" />
+                    <path d="M30 10C70 50 30 100 70 150C110 200 70 250 110 290" stroke="var(--accent-color)"
+                        stroke-opacity="0.2" stroke-width="2" />
+                    <path d="M50 10C90 50 50 100 90 150C130 200 90 250 130 290" stroke="var(--accent-color)"
+                        stroke-opacity="0.2" stroke-width="2" />
+                </svg>
+            </div>
+
+            <!-- Green circle left -->
+            <div class="hero-circle circle-green"></div>
+
+            <!-- Orange circle right -->
+            <div class="hero-circle circle-orange"></div>
+
+            <!-- Right side wavy pattern -->
+            <div class="hero-pattern hero-pattern-right">
+                <svg width="150" height="300" viewBox="0 0 150 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M140 10C100 50 140 100 100 150C60 200 100 250 60 290" stroke="var(--accent-color)"
+                        stroke-opacity="0.2" stroke-width="2" />
+                    <path d="M120 10C80 50 120 100 80 150C40 200 80 250 40 290" stroke="var(--accent-color)"
+                        stroke-opacity="0.2" stroke-width="2" />
+                    <path d="M100 10C60 50 100 100 60 150C20 200 60 250 20 290" stroke="var(--accent-color)"
+                        stroke-opacity="0.2" stroke-width="2" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="container hero-content animate-on-scroll">
+            <span class="hero-institution">Daruswalah Islamic Academy</span>
+            <h1 class="hero-main-title">where knowledge is sacred<br>and learning is a duty</h1>
+            <a href="#about" class="hero-cta-btn">
+                Know more <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container text-center animate-on-scroll">
+            <div class="section-header-wrapper">
+                <span class="section-subtitle">WHO WE ARE</span>
+                <h2 class="section-title-premium">About SADA</h2>
+                <div class="header-underline"></div>
+            </div>
+
+            <div class="about-glass-container">
+                <p class="about-text">
+                    <strong class="highlight-text">SADA</strong> is the official students' union of
+                    <strong>Daruswalah Islamic Academy</strong>, led by students to coordinate academic, cultural,
+                    and
+                    campus activities in accordance with Islamic values.
+                    <br><br>
+                    We strive to build a community of excellence, leadership, and service.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Committee Section -->
+    <section id="committee">
+        <div class="container text-center">
+            <div class="committee-header-box animate-on-scroll">
+                <span class="committee-subtitle">LEADERSHIP 2025-26</span>
+                <h2 class="committee-main-title">COMMITTEE</h2>
+                <div class="header-underline"></div>
+            </div>
+
+            <div class="carousel-viewport animate-on-scroll">
+                <div class="carousel-container" id="committee-track">
+
+                    <div class="committee-card">
+                        <div class="member-photo-wrapper">
+                            <img src="assets/images/committee_placeholder.png" alt="Profile" class="member-photo">
+                        </div>
+                        <h3 class="member-name">President Name</h3>
+                        <span class="member-role-badge">President</span>
+                    </div>
+
+                    <div class="committee-card">
+                        <div class="member-photo-wrapper">
+                            <img src="assets/images/akmal_secretary.jpg" alt="Akmal" class="member-photo"
+                                style="object-position: center top;">
+                        </div>
+                        <h3 class="member-name">Akmal</h3>
+                        <span class="member-role-badge">Secretary</span>
+                    </div>
+
+                    <div class="committee-card">
+                        <div class="member-photo-wrapper">
+                            <img src="assets/images/simsarul_haq.jpg" alt="Simsarul Haq" class="member-photo"
+                                style="object-position: center top;">
+                        </div>
+                        <h3 class="member-name">Simsarul Haq</h3>
+                        <span class="member-role-badge">Treasurer</span>
+                    </div>
+
+                    <div class="committee-card">
+                        <div class="member-photo-wrapper">
+                            <img src="assets/images/sinan_ta.jpg" alt="Sinan TA" class="member-photo"
+                                style="object-position: center;">
+                        </div>
+                        <h3 class="member-name">Sinan TA</h3>
+                        <span class="member-role-badge">Vice President</span>
+                    </div>
+
+                    <div class="committee-card">
+                        <div class="member-photo-wrapper">
+                            <img src="assets/images/mishal_thangal.jpg" alt="Mishal Thangal" class="member-photo"
+                                style="object-position: center;">
+                        </div>
+                        <h3 class="member-name">Mishal Thangal</h3>
+                        <span class="member-role-badge">Vice President</span>
+                    </div>
+
+                    <div class="committee-card">
+                        <div class="member-photo-wrapper">
+                            <img src="assets/images/sinan_vellamunda.jpg" alt="Sinan Vellamunda" class="member-photo"
+                                style="object-position: center;">
+                        </div>
+                        <h3 class="member-name">Sinan Vellamunda</h3>
+                        <span class="member-role-badge">Joint Secretary</span>
+                    </div>
+
+                    <div class="committee-card">
+                        <div class="member-photo-wrapper">
+                            <img src="assets/images/salman_faris.jpg" alt="Salman Faris" class="member-photo"
+                                style="object-position: center;">
+                        </div>
+                        <h3 class="member-name">Salman Faris</h3>
+                        <span class="member-role-badge">Joint Secretary</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wings Section -->
+    <section id="wings"
+        style="background: linear-gradient(180deg, #0B1215 0%, #0F1A1E 100%); position: relative; padding: 4rem 0;">
+        <div class="container animate-on-scroll">
+            <div class="section-header-wrapper">
+                <span class="section-subtitle">DEPARTMENTS</span>
+                <h2 class="section-title-premium">Our Wings</h2>
+                <div class="header-underline"></div>
+            </div>
+
+            <div class="wings-grid">
+
+                <div class="wing-card animate-on-scroll">
+                    <i class="fas fa-music wing-watermark"></i>
+                    <div class="wing-icon-top"><i class="fas fa-music"></i></div>
+
+                    <div>
+                        <h3 class="wing-title">Sahithya Samajam</h3>
+                        <div class="wing-roles">
+                            <div class="wing-role-row">
+                                <span class="role-label">Chief</span>
+                                <span class="role-value">Irfan Ambalakkandi</span>
+                            </div>
+                            <div class="wing-role-row">
+                                <span class="role-label">Assistant</span>
+                                <span class="role-value">Rasheed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wing-card animate-on-scroll delay-100">
+                    <i class="fas fa-pen-nib wing-watermark"></i>
+                    <div class="wing-icon-top"><i class="fas fa-pen-nib"></i></div>
+
+                    <div>
+                        <h3 class="wing-title">Magazine Wing</h3>
+                        <div class="wing-roles">
+                            <div class="wing-role-row">
+                                <span class="role-label">Chief</span>
+                                <span class="role-value">Sabeel Rashad</span>
+                            </div>
+                            <div class="wing-role-row">
+                                <span class="role-label">Assistant</span>
+                                <span class="role-value">Ridwan & Ameen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wing-card animate-on-scroll delay-200">
+                    <i class="fas fa-desktop wing-watermark"></i>
+                    <div class="wing-icon-top"><i class="fas fa-desktop"></i></div>
+
+                    <div>
+                        <h3 class="wing-title">DTP Wing</h3>
+                        <div class="wing-roles">
+                            <div class="wing-role-row">
+                                <span class="role-label">Chief</span>
+                                <span class="role-value">Sabeel Rashad</span>
+                            </div>
+                            <div class="wing-role-row">
+                                <span class="role-label">Assistant</span>
+                                <span class="role-value">Salman Faris</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wing-card animate-on-scroll delay-300">
+                    <i class="fas fa-book-open wing-watermark"></i>
+                    <div class="wing-icon-top"><i class="fas fa-book-open"></i></div>
+
+                    <div>
+                        <h3 class="wing-title">Sahithya Manjari</h3>
+                        <div class="wing-roles">
+                            <div class="wing-role-row">
+                                <span class="role-label">Chief</span>
+                                <span class="role-value">Rafi Muthalam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wing-card animate-on-scroll">
+                    <i class="fas fa-store wing-watermark"></i>
+                    <div class="wing-icon-top"><i class="fas fa-store"></i></div>
+                    <div>
+                        <h3 class="wing-title">Store Wing</h3>
+                        <div class="wing-roles">
+                            <div class="wing-role-row">
+                                <span class="role-label">Chief</span>
+                                <span class="role-value">Safwan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wing-card animate-on-scroll delay-100">
+                    <i class="fas fa-box wing-watermark"></i>
+                    <div class="wing-icon-top"><i class="fas fa-box"></i></div>
+                    <div>
+                        <h3 class="wing-title">FA Box</h3>
+                        <div class="wing-roles">
+                            <div class="wing-role-row">
+                                <span class="role-label">Chief</span>
+                                <span class="role-value">Sinan TA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wing-card animate-on-scroll delay-200">
+                    <i class="fas fa-microphone-alt wing-watermark"></i>
+                    <div class="wing-icon-top"><i class="fas fa-microphone-alt"></i></div>
+                    <div>
+                        <h3 class="wing-title">Media Wing</h3>
+                        <div class="wing-roles">
+                            <div class="wing-role-row">
+                                <span class="role-label">Chief</span>
+                                <span class="role-value">Nihal PT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Event Highlights -->
+    <section id="events" style="background: #0B1215; position: relative; padding: 4rem 0; margin-top: 5rem;">
+        <div class="container animate-on-scroll">
+            <div class="section-header-wrapper">
+                <span class="section-subtitle">GALLERY</span>
+                <h2 class="section-title-premium">Event Highlights</h2>
+                <div class="header-underline"></div>
+            </div>
+            <div class="events-grid">
+                <!-- New Events -->
+                <div class="event-card animate-on-scroll delay-100">
+                    <img src="assets/images/event_ishal_night.jpg" alt="Ishal Night" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Ishal Night</h3>
+                            <p class="event-date">December 19, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-200">
+                    <img src="assets/images/event_flag_gaznid.jpg" alt="Flag Hand Over" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Flag Hand Over TEAM GAZNID</h3>
+                            <p class="event-date">November 30, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-300">
+                    <img src="assets/images/event_flag_seljuk.jpg" alt="Flag Hand Over" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Flag Hand Over TEAM SELJUK</h3>
+                            <p class="event-date">November 30, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-400">
+                    <img src="assets/images/event_flag_aybik.jpg" alt="Flag Hand Over" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Flag Hand Over TEAM AYBIK</h3>
+                            <p class="event-date">November 30, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-100">
+                    <img src="assets/images/event_football_champions.jpg" alt="Football Champions" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Football Champions</h3>
+                            <p class="event-date">November 24, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-200">
+                    <img src="assets/images/event_mythoria_offstage_1.jpg" alt="Mythoria Art Fest" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Mythoria Art Fest - Off Stage</h3>
+                            <p class="event-date">November 20, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-300">
+                    <img src="assets/images/event_mythoria_offstage_2.jpg" alt="Mythoria Art Fest" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Mythoria Art Fest - Off Stage</h3>
+                            <p class="event-date">November 20, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-400">
+                    <img src="assets/images/event_mythoria_offstage_3.jpg" alt="Mythoria Art Fest" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Mythoria Art Fest - Off Stage</h3>
+                            <p class="event-date">November 20, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-100">
+                    <img src="assets/images/event_tribute_usthad.jpg" alt="Tribute to Usthad" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Tribute to Usthad Ahmed Kutty Baqavi</h3>
+                            <p class="event-date">November 01, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-200">
+                    <img src="assets/images/event_awaken_2k25.jpg" alt="Awaken 2k25" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Awaken 2k25</h3>
+                            <p class="event-date">September 20, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-300">
+                    <img src="assets/images/event_mythoria_logo_launch.jpg" alt="Logo Launching" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Mythoria Art Fest Logo Launching</h3>
+                            <p class="event-date">September 16, 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-card animate-on-scroll delay-400">
+                    <img src="assets/images/event_mehfile_ishq.jpg" alt="Mehfile Ishq" class="event-img">
+                    <div class="event-overlay">
+                        <div class="event-info">
+                            <h3 class="event-title">Rabeeh Meelad Fest - MEHFILE ISHQ</h3>
+                            <p class="event-date">September 16, 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Split Layout -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-container-split">
+
+                <!-- Left Side -->
+                <div class="contact-info-side animate-on-scroll">
+                    <h4>Contact Us</h4>
+                    <h2>GET IN TOUCH</h2>
+                    <p class="contact-desc">
+                        Have questions or want to collaborate? We'd love to hear from you.
+                        Send us a message and we'll respond as soon as possible.
+                    </p>
+
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-detail-text">
+                            <h5>Visit Us</h5>
+                            <p>Daruswalah Islamic Academy<br>Kerala, India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <div class="contact-detail-icon"><i class="fas fa-paper-plane"></i></div>
+                        <div class="contact-detail-text">
+                            <h5>Email Us</h5>
+                            <p>sadadaruswalah@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Form -->
+                <div class="contact-form-box animate-on-scroll delay-200">
+                    <form id="contactForm">
+                        <label class="form-label">Name</label>
+                        <input type="text" name="entry.1476081267" class="contact-input" placeholder="Your Name"
+                            required>
+
+                        <label class="form-label">Email</label>
+                        <input type="email" name="entry.1656906165" class="contact-input" placeholder="your@email.com"
+                            required>
+
+                        <label class="form-label">Message</label>
+                        <textarea name="entry.186188168" class="contact-input" rows="4" placeholder="How can we help?"
+                            required></textarea>
+
+                        <button type="submit" class="contact-submit">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="premium-footer">
+        <div class="container footer-grid animate-on-scroll">
+            <div class="footer-col info-col">
+                <h2 class="footer-brand">SADA</h2>
+                <p class="footer-tagline">Official students' union of Daruswalah Islamic Academy. Coordinating
+                    academic,
+                    cultural, and campus activities with values.</p>
+            </div>
+            <div class="footer-col links-col">
+                <h4 class="footer-heading">QUICK LINKS</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#committee">Committee</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">CONTACT</h4>
+                <div class="footer-contact-info">
+                    <p>Daruswalah Islamic Academy</p>
+                    <p>Kerala, India</p>
+                    <p class="mt-1"><a href="mailto:sadadaruswalah@gmail.com">sadadaruswalah@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-col social-col">
+                <h4 class="footer-heading">FOLLOW Us</h4>
+                <div class="social-btns">
+                    <a href="https://www.instagram.com/sada__official__?igsh=MXI1cHU1NWRoMzExOA==" class="social-btn"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@voiceofaslamissadadaruswal9079" class="social-btn"
+                        target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.whatsapp.com/channel/0029VbB7MXc0rGiP2nThyJ1U" class="social-btn"
+                        target="_blank"><i class="fas fa-comments"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container bottom-content">
+                <p>&copy; 2026 SADA. All rights reserved.</p>
+                <p class="dev-info">Developed by SADA • <a href="https://wa.me/9074131973" target="_blank"><i
+                            class="fab fa-whatsapp"></i> Developer Contact</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

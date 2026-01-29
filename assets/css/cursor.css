@@ -1,0 +1,20 @@
+/* Cursor Spotlight Effect */
+.cursor-spotlight {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+            rgba(59, 156, 125, 0.15),
+            transparent 40%);
+    transition: background 0.1s ease;
+    /* Slight lag for smoothness or removed for instant */
+    mix-blend-mode: screen;
+    /* Helps it glow over dark bg */
+}
+
+/* Optional: Make cards glow on approach too */
+/* We can add a subtle border reveal if desired, but global is good start */

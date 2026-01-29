@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - SADA | Daruswalah Islamic Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="donation-page">
+
+    <!-- Header Wrapper -->
+    <div class="header-wrapper">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div class="top-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>karamoola, mukkam, 673602</span>
+                </div>
+                <div class="top-social">
+                    <a href="https://www.instagram.com/sada__official__?igsh=MXI1cHU1NWRoMzExOA=="
+                        class="top-social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@voiceofaslamissadadaruswal9079" class="top-social-link"
+                        target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.whatsapp.com/channel/0029VbB7MXc0rGiP2nThyJ1U" class="top-social-link"
+                        target="_blank"><i class="fas fa-comments"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header id="main-header">
+            <a href="index.html" class="header-logo">
+                <img src="assets/images/logo.png" alt="SADA Logo">
+            </a>
+
+            <nav class="desktop-menu">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#committee">Committee</a>
+                <a href="index.html#wings">Wings</a>
+                <a href="index.html#events">Events</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="donation.html" class="donate-btn">
+                    <i class="fas fa-heart"></i> Donate
+                </a>
+            </nav>
+
+            <div class="mobile-menu-btn" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu">
+        <div style="position: absolute; top: 2rem; right: 2rem; font-size: 2rem; cursor: pointer; color: #fff;"
+            id="close-mobile-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <a href="index.html#home" class="mobile-link">Home</a>
+        <a href="index.html#about" class="mobile-link">About</a>
+        <a href="index.html#committee" class="mobile-link">Committee</a>
+        <a href="index.html#wings" class="mobile-link">Wings</a>
+        <a href="index.html#events" class="mobile-link">Events</a>
+        <a href="index.html#contact" class="mobile-link">Contact</a>
+        <a href="donation.html" class="mobile-link" style="color: var(--accent-color);">Donate</a>
+    </div>
+
+    <!-- Donation Section -->
+    <section class="donation-section">
+        <div class="container">
+            <div class="donation-header">
+                <span class="donation-label">DONATION</span>
+                <h1 class="donation-title">SUPPORT SADA</h1>
+            </div>
+
+            <div class="donation-content">
+                <!-- Bank Transfer Column -->
+                <div class="bank-transfer-column">
+                    <h2 class="column-title">Bank Transfer</h2>
+
+                    <div class="bank-field">
+                        <label class="field-label">ACCOUNT NAME</label>
+                        <div class="field-value-group">
+                            <span class="field-value" id="account-name">SADA Official</span>
+                            <button class="copy-btn" onclick="copyToClipboard('account-name')">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bank-field">
+                        <label class="field-label">ACCOUNT NUMBER</label>
+                        <div class="field-value-group">
+                            <span class="field-value" id="account-number">1234 5678 9012 3456</span>
+                            <button class="copy-btn" onclick="copyToClipboard('account-number')">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bank-field">
+                        <label class="field-label">IFSC CODE</label>
+                        <div class="field-value-group">
+                            <span class="field-value" id="ifsc-code">HDFC0001234</span>
+                            <button class="copy-btn" onclick="copyToClipboard('ifsc-code')">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bank-field">
+                        <label class="field-label">BANK NAME</label>
+                        <div class="field-value-group">
+                            <span class="field-value">HDFC Bank</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QR Code Column -->
+                <div class="qr-code-column">
+                    <h2 class="column-title">Scan to Pay</h2>
+
+                    <div class="qr-code-container">
+                        <div class="qr-code-placeholder">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                    </div>
+
+                    <div class="upi-field">
+                        <label class="field-label">UPI ID</label>
+                        <div class="field-value-group">
+                            <span class="field-value" id="upi-id">sada@hdfcbank</span>
+                            <button class="copy-btn" onclick="copyToClipboard('upi-id')">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="donation-message">
+                        Your contributions help us organize<br>
+                        events and support student welfare.<br>
+                        Jazakallah Khair.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="premium-footer">
+        <div class="container footer-grid animate-on-scroll">
+            <div class="footer-col info-col">
+                <h2 class="footer-brand">SADA</h2>
+                <p class="footer-tagline">Official students' union of Daruswalah Islamic Academy. Coordinating
+                    academic,
+                    cultural, and campus activities with values.</p>
+            </div>
+            <div class="footer-col links-col">
+                <h4 class="footer-heading">QUICK LINKS</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#committee">Committee</a></li>
+                    <li><a href="index.html#events">Events</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">CONTACT</h4>
+                <div class="footer-contact-info">
+                    <p>Daruswalah Islamic Academy</p>
+                    <p>Kerala, India</p>
+                    <p class="mt-1"><a href="mailto:sadadaruswalah@gmail.com">sadadaruswalah@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-col social-col">
+                <h4 class="footer-heading">FOLLOW Us</h4>
+                <div class="social-btns">
+                    <a href="https://www.instagram.com/sada__official__?igsh=MXI1cHU1NWRoMzExOA==" class="social-btn"
+                        target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@voiceofaslamissadadaruswal9079" class="social-btn"
+                        target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.whatsapp.com/channel/0029VbB7MXc0rGiP2nThyJ1U" class="social-btn"
+                        target="_blank"><i class="fas fa-comments"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container bottom-content">
+                <p>&copy; 2026 SADA. All rights reserved.</p>
+                <p class="dev-info">Developed by SADA • <a href="https://wa.me/9074131973" target="_blank"><i
+                            class="fab fa-whatsapp"></i> Developer Contact</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        function copyToClipboard(elementId) {
+            const element = document.getElementById(elementId);
+            const text = element.textContent;
+            navigator.clipboard.writeText(text).then(() => {
+                // Visual feedback
+                const btn = element.nextElementSibling;
+                const icon = btn.querySelector('i');
+                icon.classList.remove('fa-copy');
+                icon.classList.add('fa-check');
+                btn.style.color = 'var(--accent-color)';
+
+                setTimeout(() => {
+                    icon.classList.remove('fa-check');
+                    icon.classList.add('fa-copy');
+                    btn.style.color = '';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+
+</html>
