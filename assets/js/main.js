@@ -49,13 +49,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
             if (scrollY >= (sectionTop - 150)) {
-                current = section.getAttribute('id');
+                // Only consider sections with an ID
+                if (section.getAttribute('id')) {
+                    current = section.getAttribute('id');
+                }
             }
         });
 
         navLinks.forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href').includes(current)) {
+            // Only add active class if current is not empty and matches
+            if (current && link.getAttribute('href').includes(current)) {
                 link.classList.add('active');
             }
         });
@@ -305,5 +309,8 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+
+
 
 });

@@ -1855,3 +1855,265 @@ header.scrolled .desktop-menu a {
     padding: 2rem 1.5rem;
   }
 }
+
+/* Dropdown Menu Styles */
+.dropdown-parent {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  height: 100%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: rgba(11, 17, 20, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  min-width: 200px;
+  padding: 0.8rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  z-index: 1100;
+}
+
+.dropdown-parent:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu a {
+  padding: 0.8rem 1.5rem;
+  color: #fff;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  display: block;
+  transition: background 0.3s;
+  min-height: auto;
+  /* Override default header link height if set */
+}
+
+.dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--accent-color);
+  padding-left: 1.8rem;
+  /* Slide effect */
+}
+
+/* Webzine Section */
+#webzine {
+  padding: 8rem 0;
+  background: var(--bg-color);
+  position: relative;
+}
+
+.webzine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+  justify-items: center;
+}
+
+.webzine-card {
+  width: 100%;
+  max-width: 350px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.webzine-cover-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    2px 2px 0 rgba(255, 255, 255, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform-style: preserve-3d;
+}
+
+.webzine-card:hover .webzine-cover-wrapper {
+  transform: translateY(-10px) rotateY(-5deg);
+  box-shadow:
+    15px 25px 50px rgba(0, 0, 0, 0.6),
+    2px 2px 0 rgba(255, 255, 255, 0.1);
+}
+
+.webzine-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.webzine-info {
+  margin-top: 1.8rem;
+  text-align: center;
+}
+
+.webzine-title {
+  font-family: var(--font-heading);
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.webzine-issue {
+  color: var(--accent-color);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  display: block;
+  font-weight: 600;
+}
+
+.webzine-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--secondary-color);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.webzine-link:hover {
+  color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+/* Programs Section */
+#programs {
+  padding: 8rem 0;
+  background: var(--card-bg);
+  position: relative;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 992px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.program-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.program-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--accent-color);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.program-icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  width: 60px;
+  height: 60px;
+  background: rgba(46, 204, 113, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.program-card:hover .program-icon {
+  background: var(--accent-color);
+  color: #0B1215;
+}
+
+.program-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.program-desc {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  line-height: 1.7;
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+}
+
+.program-link {
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+
+.program-card:hover .program-link {
+  opacity: 1;
+  padding-left: 5px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .webzine-grid {
+    gap: 3rem 1.5rem;
+  }
+
+  .webzine-card {
+    max-width: 280px;
+  }
+
+  #webzine,
+  #programs {
+    padding: 5rem 0;
+  }
+}
