@@ -1446,6 +1446,52 @@ header.scrolled .desktop-menu a {
   min-height: 100vh;
 }
 
+/* Ensure nav links and typography are HIDDEN on dark background for donation page before scroll */
+.donation-page header:not(.scrolled) .desktop-menu a {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.donation-page header:not(.scrolled) .mobile-menu-btn {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.donation-page header:not(.scrolled) .header-logo-text {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  width: 0 !important;
+  margin: 0;
+}
+
+/* Ensure they appear when scrolled */
+.donation-page header.scrolled .desktop-menu a {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  color: #fff;
+}
+
+.donation-page header.scrolled .mobile-menu-btn {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  color: #fff;
+}
+
+.donation-page header.scrolled .header-logo-text {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+  width: auto !important;
+  margin-top: -3px;
+  margin-left: 4px;
+}
+
 .donation-section {
   padding: 12rem 0 6rem;
   min-height: calc(100vh - 200px);
